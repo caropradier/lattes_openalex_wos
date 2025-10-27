@@ -1,6 +1,6 @@
 ## Language hierarchies and gender inequalities
 
-This is the repository for the article "Language hierarchies and gender inequalities: the coverage of OpenAlex and the Web of Science"
+This is the repository for the article "Language hierarchies and gender inequalities: the coverage of OpenAlex and the Web of Science".
 
 <br>
 
