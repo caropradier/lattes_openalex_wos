@@ -679,7 +679,6 @@ ind_over_under <- full_full %>%
   scale_y_discrete( labels = function(x) str_wrap(x,10))+
   scale_x_continuous(limits = c(-.3,.3))+
   labs(x = "Ratio between observed and expected \n% of publications indexed in OpenAlex", fill = ""
-       #, y = "Discipline"
        , y = ""
        ,title = "E"
   )+
@@ -714,8 +713,8 @@ ind_over_under_wos <- full_full %>%
   theme(legend.position = "top")+
   scale_y_discrete( labels = function(x) str_wrap(x,10))+
   scale_x_continuous(limits = c(-.3,.3))+
-  labs(x = "Ratio between observed and expected % \nof publications indexed in the WoS", fill = "", y = ""
-       #y = "Discipline"
+  labs(x = "Ratio between observed and expected % \nof publications indexed in the WoS", 
+       fill = "", y = ""
        ,title = "D"
   )+
   theme(panel.grid.minor = element_blank())+
@@ -751,7 +750,7 @@ eng_over_under <- full_full %>%
   theme_minimal()+
   theme(legend.position = "top")+
   labs(x = "Ratio between observed and expected % \nof publications written in English", fill = "", 
-       y = "Discipline"
+       y = "Domain"
        ,title = "C"
   )+
   theme(panel.grid.minor = element_blank())+
@@ -774,7 +773,7 @@ authorship <- full_full %>%
   theme(legend.position = "top")+
   scale_x_continuous(labels = function(x) paste0(x*100,"%"))+
   scale_y_discrete( labels = function(x) str_wrap(x,10))+
-  labs(fill = "", y = "Discipline", x = "% Authorship"
+  labs(fill = "", y = "Domain", x = "% Authorship"
        ,title = "A"
   )+
   theme(panel.grid.minor = element_blank())+
@@ -830,7 +829,6 @@ ind_eng <- left_join(
   scale_x_continuous(labels = function(x) paste0(x*100,"%"))+
   scale_y_discrete( labels = function(x) str_wrap(x,10))+
   labs(fill = "", y = "",
-       #y = "Discipline", 
        x = "% Publications"
        ,title = "B"
   )+
